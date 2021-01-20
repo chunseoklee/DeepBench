@@ -10,7 +10,10 @@ KERNELS_DIR=../kernels/
 
 gemm: gemm_bench.cc
 	$(MKDIR) $(BIN_DIR)
-	g++ -O3 --std=c++11 -I $(KERNELS_DIR) -lpthread -mfpu=neon-fp-armv8 -o bin/gemm_bench $<
+#gcc
+	g++ -O3 --std=c++11 -I/home/ubuntu/ -mcpu=cortex-a53 -mfpu=neon-vfpv4 -I $(KERNELS_DIR) -o bin/gemm_bench -lpthread $< -lpthread
+#clang
+#	clang-10 -O3 --std=c++11 -lstdc++ -mcpu=cortex-a53 -mfpu=neon-vfpv4 -lm -I/home/ubuntu/ -I $(KERNELS_DIR) -o bin/gemm_bench $< -lpthread
 
 sparse: sparse_bench.cpp
 	$(MKDIR) $(BIN_DIR)
