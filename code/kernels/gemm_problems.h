@@ -243,18 +243,18 @@ std::vector<std::tuple<int, int, int, bool, bool>> inference_server_set = {
 
 // Vector saves m, n, k, a_t, b_t
 std::vector<std::tuple<int, int, int, bool, bool>> inference_device_set = {
-    std::make_tuple(5124, 700, 2048, false, false),
-    std::make_tuple(35, 700, 2048, false, false),
-    std::make_tuple(3072, 1, 1024, false, false),
-    std::make_tuple(64, 1, 1216, false, false),
-    std::make_tuple(3072, 1500, 1024, false, false),
-    std::make_tuple(128, 1500, 1280, false, false),
-    std::make_tuple(3072, 1500, 128, false, false),
-    std::make_tuple(128, 1, 1024, false, false),
-    std::make_tuple(3072, 1, 128, false, false),
-    std::make_tuple(176, 1500, 1408, false, false),
-    std::make_tuple(4224, 1500, 176, false, false),
-    std::make_tuple(128, 1, 1408, false, false),
-    std::make_tuple(4224, 1, 128, false, false)
+    std::make_tuple(5124, 700, 2048, false, true ),
+    std::make_tuple(35, 700, 2048, false, true),
+    std::make_tuple(3072, 1, 1024, false, true),
+    std::make_tuple(64, 1, 1216, false, true),
+    std::make_tuple(3072, 1500, 1024, false, true),
+    std::make_tuple(128, 1500, 1280, false, true),
+    std::make_tuple(3072, 1500, 128, false, true),
+    std::make_tuple(128, 1, 1024, false, true),
+    std::make_tuple(3072, 1, 128, false, true),
+    std::make_tuple(176, 1500, 1408, false, true),
+    std::make_tuple(4224, 1500, 176, false, true),
+    std::make_tuple(128, 1, 1408, false, true),
+    std::make_tuple(4224, 1, 128, false, true)
 };
 

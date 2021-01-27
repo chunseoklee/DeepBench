@@ -308,6 +308,8 @@ int main(int argc, char** argv) {
     std::cout << std::setfill(' ');
     std::cout << "    m       n      k      a_t    b_t    time (msec)     GOPS " << std::endl;
 
+    std::cout << "====== gemmlowp kernel ======" << std::endl;
+
     for (const auto &problem : inference_device_set) {
     	int m, n, k;
     	bool a_t, b_t;
